@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(122, 22, 22); */
+    }
+  
+  .header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    background: none;
+    font-family: fantasy;
+    font-size: 29px;
+  }
+  
+  
+  .contact-me {
+    display: flex;
+    /* flex-direction:column-reverse; */
+    margin: 0 30px 20px 20px;
+    background: none;
+    font-family: fantasy;
+    font-size: 29px;
+    color:black;
+    list-style: none;
+    padding-top: 5.5%;
+    /* justify-content: space-around; */
+  }
+  
+  .contact-me li a{
+  color:black;
+  /* padding: 0%; */
+  margin-right: 40px;
+  padding-top: 0%;
+  /* justify-content: space-evenly; */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  p {
+    font-size: 30px;
+    font-family: fantasy;
+    padding-top: 10%;
+  }
+  
+  .header-hover a::before {  
+    /* This is for the hover underline */
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform:scale(0,1);
+    /* this shows the line on the x or y axis. here the x axis is not showing up but when you hover it will turn into a 1 and show up. */
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom left;
+    /* The line starts from the bottom left */
+    transition: transform 0.25s ease-out;
+  }
+  .header-hover a:hover::before {
+    transform: scale(1,1);
+    transform-origin: botttom left; 
+  }
+
+  .contact-me a::before {  
+    /* This is for the hover underline */
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform:scale(0,1);
+    /* this shows the line on the x or y axis. here the x axis is not showing up but when you hover it will turn into a 1 and show up. */
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(191 27 53);
+    transform-origin: bottom left;
+    /* The line starts from the bottom left */
+    transition: transform 0.25s ease-out;
+  }
+  .contact-me a:hover::before {
+    transform: scale(1,1);
+    transform-origin: botttom left; 
+  }
+  
+  
+  .header {
+    background: linear-gradient(to bottom left, rgb(191 27 53), black);
+    padding: 1%;
+    text-decoration: none;
+  }
+  
+  .header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .header h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 1%;
+    margin-left: -1.1%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .photo {
+    height: 200px;
+    width: 100%;
+    margin: 0px 0px;
+    background-image: url("./Images/header5.jpeg");
+    background-size:cover;
+  }
+  
+  .content {
+    /* border: 2px solid black; */
+    padding: 25px;
+  }
+  
+  .section-headers {
+    display: flex;
+    /* Allows all the child elements (each span) to display in one row.*/
+    font-size: 50px;
+    font-family: fantasy;
+    height: 30vh;
+    flex-direction: column;
+    /* changes the direction of the display to column */
+    text-align: right;
+    border-right: 4px solid rgb(191 27 53);
+    padding-right: 20px;
+    width: 28%;
+  }
+
+  .Anime {
+    display: flex;
+    flex-direction:unset;
+    padding-right: 47.1%;
+    border: 1px solid green;
+  }
+
+  #header-anime {
+      height: 145vh;
+      border: none;
+  }
+  #header-contact-me {
+      height: 25vh;
+      border: none;
+  }
+  #header-resume {
+      height: 25vh;
+      border: none;
+  }
+  #header-about-me {
+      height: 20vh;
+      border: none;
+  }
+  .article {
+    display: flex;
+    /* Allows all the child elements (h1 and p) to display in one row.*/
+    padding-top: 40px;
+  }
+
+  
+  .section-paragraphs {
+    padding: 3px 0 0 40px;
+    width: 65%;
+  }
+
+
+  #zenitsu {
+    width: 96%;
+    padding: 1%;
+
+  }
+  #zenitsu img {
+    width: 100%;
+    border: 5px solid rgb(245, 110, 33);
+  
+  }
+
+.anime-container {
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    justify-content: space-between;
+}
+  
+.anime-pic-size {
+    height: 100%;
+    width: 49%;
+    padding: 1%;
+    margin: 0%;
+  }
+
+.anime-images {
+    width:100%;
+    border: 5px solid rgb(112, 112, 112);
+    /* filter: saturate(100%); */
+    filter: brightness(100%);
+  }
+
+.anime-images:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 50px rgba(162, 82, 219, 0.4);
+  /* filter:saturate(150%); */
+  filter: brightness(160%); 
+  transition-duration: .5s;
+
+}
+
+#section-paragraphs-about-me {
+  margin-top: 0%;
+  border-left: 4px solid rgb(191 27 53);
+}
+#section-paragraphs-anime {
+  border-left: 4px solid rgb(191 27 53);
+}
+#section-paragraphs-contact-me {
+  border-left: 4px solid rgb(191 27 53);
+}
+#section-paragraphs-resume {
+  border-left: 4px solid rgb(191 27 53);
+}
+#resume {
+  width: 56%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#resume img {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+}
+  
+
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+  .header {
+    width: 100%;
+    background: linear-gradient(to bottom left, rgb(191 27 53), black);
+  }
+  .header nav ul li {
+    display: block;
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .header h1{
+    display: block;
+    font-size: 29px;
+  }
+  .contact-me {
+    display: block;
+    font-size: 15px;
+  }
+
+  .section-headers {
+    display: block;
+    /* Allows all the child elements (each span) to display in one row.*/
+    font-size: 18px;
+    font-family: fantasy;
+    height: 20vh;
+    flex-direction: column;
+    text-align:left;
+    border-right: 4px solid rgb(191 27 53);
+    padding-right: 20px;
+    width: 22%;
+  }
+  .section-paragraphs {
+    width: 100%;
+  }
+  .contact-headers {
+    display: block;
+    /* Allows all the child elements (each span) to display in one row.*/
+    font-size: 18px;
+    font-family: fantasy;
+    height: 20vh;
+    flex-direction: column;
+    text-align:left;
+    border-right: 4px solid rgb(191 27 53);
+    padding-right: 20px;
+    width: 22%;
+  }
+  .Anime-header {
+    display: block;
+    /* Allows all the child elements (each span) to display in one row.*/
+    font-size: 18px;
+    font-family: fantasy;
+    height: 20vh;
+    flex-direction: column;
+    text-align:left;
+    border-right: 4px solid rgb(191 27 53);
+    padding-right: 30px;
+    width: 22%;
+  }
+    #header-anime {
+      height: 11vh;
+      border: none;
+      margin-left: 10px;
+  }
+    #header-contact-me {
+      height: 15vh;
+      border: none;
+    }
+    #header-about-me {
+      margin-left: 7px;
+    }
+    p {
+      font-size: 15px;
+      font-family: fantasy;
+      padding-top: 10%;
+    }
+}
+  
+  
+  
+  /* @media screen and (max-width: 768px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      }
+    }
+   */
+  /* @media screen and (max-width: 0px) {
+      header {
+        display: flex;
+        flex-direction: column;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+      } */
+      /* @media screen and (min-width: 0px) {
+      .body { 
+        min-width: 2000px;
+        max-width: 1950px;
+        }
+      } */
+      /* @media screen and (min-width: 200px) {
+        .body { 
+          min-width: 1290px;
+          max-width: 1150px;
+          
+          }
+        } */
+        /* @media screen and (max-width: 520px) {
+          .body { 
+            min-width: 1150px;
+            max-width: 1150px;
+            
+            }
+          }
+     */
