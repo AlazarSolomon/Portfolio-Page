@@ -4,6 +4,21 @@ Now that you've had some practice with APIs and have a project to share, you'll 
 
 If you are opting out of career services, this is *still a required assignment*. Part of being a web developer means being a part of a community. Having a place to share your projects is *necessary* if you're applying for jobs, but it's also *critical* on your journey as a developer.
 
+## The Link
+
+
+Use the [Github link](https://alazarsolomon.github.io/Portfolio-Page/) to view the application.
+
+
+## Description
+
+This is a Portfolio that provides context on my personal and professional life. 
+
+## Image 
+
+![This is the website](./Images/website-image.png)
+
+
 ## Homework Requirements
 
 * Updated portfolio featuring Project 1 and two exemplary homework assignments.
